@@ -273,9 +273,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8e1789d9eef4514a9f0bce411d5d72f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: {fileID: 0}
-  dialogueText: {fileID: 0}
-  animator: {fileID: 0}
+  nameText: {fileID: 753806378}
+  dialogueText: {fileID: 1739187554}
 --- !u!4 &180969974
 Transform:
   m_ObjectHideFlags: 0
@@ -2915,7 +2914,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1799222856}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 180969973}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: DisplayNextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1799222856
 MonoBehaviour:
   m_ObjectHideFlags: 0
