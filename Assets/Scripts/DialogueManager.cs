@@ -58,8 +58,8 @@ public class DialogueManager : MonoBehaviour
         root.sentences[0].sentences[0].sentences[0] = new Dialogue(1, "Rocky", "Where am I ?", 1);
         root.sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "???", "Oh, there you are!", 2);
         root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "Rocky", "I'm sorry, who are you?", 1);
-        root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "???", "...We're students at the University of the Seas—or U Sea, as they call it around here.", 4);
-        root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "???", "You must be the transfer student!", 3);
+        root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "???", "...We're students at the University of the Seas—or U Sea, as they call it around here.", 3);
+        root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "???", "You must be the transfer student!", 4);
         root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "Rocky", "...the what?", 1);
         root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "", "Your eyes swivel to the outside, and it dawns on you that you’re in an aquarium tank.", 0);
         root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(3, "???", "The clamcellor told us we’d have a new transfer student! You must be the one!", 2);
@@ -72,7 +72,12 @@ public class DialogueManager : MonoBehaviour
         root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "???", "Well I’ve got nothing else going for me... I might as well be a student here!", 1);
         root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[1].sentences[0].sentences[0] = new Dialogue(1, "???", "Well I’ve got nothing else going for me... I might as well be a student here!", 1);
         root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[2].sentences[0].sentences[0] = new Dialogue(1, "???", "Well I’ve got nothing else going for me... I might as well be a student here!", 1);
-
+        root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "", "Who would you like to learn more about?", 0);
+        root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[1].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "", "Who would you like to learn more about?", 0);
+        root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[2].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "", "Who would you like to learn more about?", 0);
+        root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "", "END", 1);
+        root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "", "END", 1);
+        root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "", "END", 1);
 
         //foreach (string sentence in dialogue.sentences)
         //{
@@ -143,7 +148,7 @@ public class DialogueManager : MonoBehaviour
 
             StopAllCoroutines();
             StartCoroutine(TypeSentence(currDialogue.sentences[0].dialogue));
-            if (currDialogue.sentences[0].dialogue == "Well I’ve got nothing else going for me... I might as well be a student here!")
+            if (currDialogue.sentences[0].dialogue == "END")
             {
                 TalktoChars();
             }
