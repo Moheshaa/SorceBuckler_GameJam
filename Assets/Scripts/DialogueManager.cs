@@ -76,8 +76,8 @@ public class DialogueManager : MonoBehaviour
         root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[1].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "", "Who would you like to learn more about?", 0);
         root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[2].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "", "Who would you like to learn more about?", 0);
         root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "", "END", 1);
-        root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "", "END", 1);
-        root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "", "END", 1);
+        root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[1].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "", "END", 1);
+        root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[2].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "", "END", 1);
 
         //foreach (string sentence in dialogue.sentences)
         //{
@@ -226,11 +226,13 @@ public class DialogueManager : MonoBehaviour
         root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "Rocky", "Right? They’re so perfect for each other.", 1);
         root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "", "You pass her a piece of kelp to wipe her tears. She’s grateful for your act of kindness.", 0);
         root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "Axolola", "Thanks a lot, Rocky! Did you know that ‘axolotl’ means ‘water monster’ in Nahuatl? I hope I don’t come off as too scary!", 2);
+        root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "", "END1", 0);
 
 
         root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[1] = new Dialogue(1, "Rocky", "Come on, it’s just a movie.", 1);
         root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[1].sentences[0] = new Dialogue(1, "Axolola", "Oh, ok. I’m sorry.", 2);
         root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[1].sentences[0].sentences[0] = new Dialogue(1, "", "She sniffles quietly and is silent for the rest of the movie.", 0);
+        root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[1].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "", "END1", 0);
 
 
         root.sentences[0].sentences[0].sentences[1] = new Dialogue(1, "Rocky", "Come on, don’t be sad. At least you can still swim.", 1);
@@ -247,9 +249,12 @@ public class DialogueManager : MonoBehaviour
 
         root.sentences[0].sentences[0].sentences[1].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "Rocky", "Hey, do you want to share my popcorn? It’s too large for me to finish by myself.", 1);
         root.sentences[0].sentences[0].sentences[1].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "Axolola", "I actually haven’t eaten all day, so this means so much to me! ‘Axolotl’ means ‘water monster’ in Nahuatl, and my appetite definitely lives up to that, haha.", 2);
+        root.sentences[0].sentences[0].sentences[1].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "", "END1", 0);
+
 
         root.sentences[0].sentences[0].sentences[1].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[1] = new Dialogue(1, "Rocky", "Hey, The popcorn here is really good! I would recommend you grab some next time", 1);
         root.sentences[0].sentences[0].sentences[1].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[1].sentences[0] = new Dialogue(1, "", "Axolola looks confused and a little hurt.", 0);
+        root.sentences[0].sentences[0].sentences[1].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[1].sentences[0].sentences[0] = new Dialogue(1, "", "END1", 0);
 
 
 
@@ -263,9 +268,67 @@ public class DialogueManager : MonoBehaviour
 
         root.sentences[0].sentences[0].sentences[1].sentences[0].sentences[0].sentences[1].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "Rocky", "Hey, do you want to share my popcorn? It’s too large for me to finish by myself.", 1);
         root.sentences[0].sentences[0].sentences[1].sentences[0].sentences[0].sentences[1].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "Axolola", "I actually haven’t eaten all day, so this means so much to me! ‘Axolotl’ means ‘water monster’ in Nahuatl, and my appetite definitely lives up to that, haha.", 2);
+        root.sentences[0].sentences[0].sentences[1].sentences[0].sentences[0].sentences[1].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "", "END1", 2);
 
         root.sentences[0].sentences[0].sentences[1].sentences[0].sentences[0].sentences[1].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[1] = new Dialogue(1, "Rocky", "Hey, The popcorn here is really good! I would recommend you grab some next time", 1);
         root.sentences[0].sentences[0].sentences[1].sentences[0].sentences[0].sentences[1].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[1].sentences[0] = new Dialogue(1, "", "Axolola looks confused and a little hurt.", 0);
+        root.sentences[0].sentences[0].sentences[1].sentences[0].sentences[0].sentences[1].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[1].sentences[0].sentences[0] = new Dialogue(1, "", "END1", 0);
+
+
+        currDialogue = root;
+        DisplayNextSentence();
+    }
+
+    public void blobTedTalk()
+    {
+        Dialogue root = new Dialogue(1, "", "", 0);
+        root.sentences[0] = new Dialogue(1, "", "You find yourself at a local student party. The drinks are pouring, and the bass is trembling. Not the sound system, but the fish. He’s rather anxious.", 0);
+        root.sentences[0].sentences[0] = new Dialogue(1, "", "Out of the corner of your eye, you see Blobert approaching you.", 0);
+        root.sentences[0].sentences[0].sentences[0] = new Dialogue(3, "Blobert", "It’s so lonely here...", 3);
+
+        root.sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "Rocky", "I feel you; it’s a bit lonely being the only rock here.", 1);
+        root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "", "Blobert smiles and begins to look more at ease now.", 0);
+        root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "Blobert", "You know, the depths that I call home typically range from 6,000 to 12,000 meters below water. You could say I truly feel like a fish out of water here!", 3);
+
+        root.sentences[0].sentences[0].sentences[0].sentences[1] = new Dialogue(1, "Rocky", "Lonely...how so?", 1);
+        root.sentences[0].sentences[0].sentences[0].sentences[1].sentences[0] = new Dialogue(2, "Blobert", "I’m actually an international student, I’m from Australia. There’s no other fishes from there here...", 3);
+
+        root.sentences[0].sentences[0].sentences[0].sentences[1].sentences[0].sentences[0] = new Dialogue(1, "Rocky", "To be honest, I don’t know how I ended up here either.", 1);
+        root.sentences[0].sentences[0].sentences[0].sentences[1].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "", "Blobert smiles and begins to look more at ease now.", 0);
+        root.sentences[0].sentences[0].sentences[0].sentences[1].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "Blobert", "You know, the depths that I call are home typically range from 6,000 to 12,000 meters below water. You could say I truly feel like a fish out of water!", 3);
+
+        root.sentences[0].sentences[0].sentences[0].sentences[1].sentences[0].sentences[1] = new Dialogue(1, "Rocky", "That can’t possibly be true!", 1);
+        root.sentences[0].sentences[0].sentences[0].sentences[1].sentences[0].sentences[1].sentences[0] = new Dialogue(1, "", "Blobert begins to look sad, and awkwardly swims to a corner.", 0);
+
+        root.sentences[0].sentences[0].sentences[0].sentences[2] = new Dialogue(1, "Rocky", "Blankly nod.", 1);
+        root.sentences[0].sentences[0].sentences[0].sentences[2].sentences[0] = new Dialogue(1, "", "Blobert begins to look sad, and awkwardly swims to a corner.", 0);
+
+        Dialogue cont = new Dialogue(1, "", "Time passes and you are hard at work, studying in the university library. This SEA ES assignment is rather difficult.", 0);
+        cont.sentences[0] = new Dialogue(2, "", "Blobert seems to be breezing through his work.", 0);
+
+        cont.sentences[0].sentences[0] = new Dialogue(1, "Rocky", "I’m having trouble with this, do you think you could help?", 1);
+        cont.sentences[0].sentences[0].sentences[0] = new Dialogue(1, "Blobert", "Sure thing, mate! See all you have to do this...", 3);
+        cont.sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "", "You begin to relax, and you end up acing your assignment thanks to Blobert’s help.", 0);
+        cont.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "Blobert", "Not a lot of students know this, but ‘SEA ES’ actually stands for ‘Seriously Engaging Algorithmic Engineering and Science.", 3);
+
+        cont.sentences[0].sentences[1] = new Dialogue(1, "Rocky", "I should do my best to solve the problem on my own.", 1);
+        cont.sentences[0].sentences[1].sentences[0] = new Dialogue(2, "Blobert", "I reckon you’re having a tough time there; do you need any help?", 3);
+
+        cont.sentences[0].sentences[1].sentences[0].sentences[0] = new Dialogue(1, "Rocky", "Yeah, I’m having a harder time than I expected...", 1);
+        cont.sentences[0].sentences[1].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "Blobert", "Sure thing, mate! See all you have to do this...", 3);
+        cont.sentences[0].sentences[1].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "", "You begin to relax, and you end up acing your assignment thanks to Blobert’s help.", 0);
+        cont.sentences[0].sentences[1].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = new Dialogue(1, "Blobert", "Not a lot of students know this, but ‘SEA ES’ actually stands for ‘Seriously Engaging Algorithmic Engineering and Science.", 3);
+
+        cont.sentences[0].sentences[1].sentences[0].sentences[1] = new Dialogue(1, "Rocky", "No thanks, I can solve this on my own.", 1);
+        cont.sentences[0].sentences[1].sentences[0].sentences[1].sentences[0] = new Dialogue(1, "Blobert", "Oh alright then...", 3);
+        cont.sentences[0].sentences[1].sentences[0].sentences[1].sentences[0].sentences[0] = new Dialogue(1, "", "Blobert goes back to his work. You sense awkwardness in the air.", 0);
+
+
+        root.sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = cont;
+        root.sentences[0].sentences[0].sentences[0].sentences[1].sentences[0].sentences[0].sentences[0].sentences[0].sentences[0] = cont;
+        root.sentences[0].sentences[0].sentences[0].sentences[1].sentences[0].sentences[1].sentences[0].sentences[0] = cont;
+        root.sentences[0].sentences[0].sentences[0].sentences[1].sentences[0].sentences[1].sentences[0].sentences[0] = cont;
+
 
 
         currDialogue = root;
