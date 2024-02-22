@@ -409,7 +409,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 753806378}
   dialogueText: {fileID: 1739187554}
+  profPic: {fileID: 904954574}
+  dialogueChoices: {fileID: 378509333}
+  choice1: {fileID: 268254144}
+  choice2: {fileID: 1787912668}
+  choice3: {fileID: 1115754512}
+  characterChoice: {fileID: 622829089}
+  blobButton: {fileID: 891717908}
+  axoButton: {fileID: 507180314}
+  slugButton: {fileID: 2354519}
+  blobTalk: 0
+  axoTalk: 0
+  slugTalk: 0
+  sprite1: {fileID: 21300000, guid: de61937b37fc9104489b4bfa29470e4c, type: 3}
+  sprite2: {fileID: 21300000, guid: bf5a2aa8b069e51418fec153699d43d5, type: 3}
+  sprite3: {fileID: 21300000, guid: 78b623e55fd07834d9e244fb9862331f, type: 3}
+  sprite4: {fileID: 21300000, guid: 7e50f9fa1e3fcc3489c58c73c1b98a64, type: 3}
   animator: {fileID: 1848922528}
+  nodeCtr: 0
+  currDialogue:
+    id: 0
+    dialogue: 
+    name: 
+    sentences: []
 --- !u!4 &180969974
 Transform:
   m_ObjectHideFlags: 0
@@ -703,7 +725,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 268254145}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 180969973}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: OnOption1Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &268254145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1219,7 +1253,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 507180315}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 180969973}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: axoTedTalk
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &507180315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2195,12 +2241,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 038c541e100cd2b40adb9698246ea602, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: Rock
-    sentences:
-    - abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
-    - jfnfbgnjhdfbvjldnfvbeubnvsjnjfknvfjnjnvjnvkjsnvvndjvndjvnjvnjdvnjkvnjdknv
-    - fhvbdhbfvkjdbvbjkvjdfvbbrfvjkdnvjfvnb
 --- !u!1 &815775902
 GameObject:
   m_ObjectHideFlags: 0
@@ -2883,7 +2923,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1115754513}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 180969973}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: OnOption3Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1115754513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3800,7 +3852,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1787912669}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 180969973}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: OnOption2Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1787912669
 MonoBehaviour:
   m_ObjectHideFlags: 0
